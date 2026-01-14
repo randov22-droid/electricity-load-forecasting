@@ -205,3 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ========================================================
+# Project Specific Additions
+# ========================================================
+
+# DO NOT ignore the data folders (we want to keep the structure)
+!data/
+!data/raw/
+!data/processed/
+
+# DO NOT ignore the results we want to showcase
+!outputs/
+!outputs/*.png
+!outputs/*.csv
+
+# Ignore large temporary files created by Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Ignore OS-specific files
+.DS_Store
+.DS_Store?
+._*
+Thumds.db
+desktop.ini
+
+# Ignore any local configuration or scratchpads
+scratchpad.py
+temp/
