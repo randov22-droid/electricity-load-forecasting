@@ -1,0 +1,7 @@
+Model,Mean Bias (MW),Max Over-prediction,Max Under-prediction
+LinearRegression,-8.48,770.74,-701.29
+k-NN,83.5,2086.31,-1072.88
+RandomForest,8.0,631.43,-689.52
+XGBoost,-0.7,840.2,-514.52
+LightGBM,-1.41,807.61,-498.71
+Persistence (Lag 24),-0.58,2186.0,-2662.0
