@@ -9,6 +9,13 @@ Energy utility companies face significant financial risk due to the volatility o
 * **Feature Drivers:** XGBoost importance scores identified [Insert Feature 1] and [Insert Feature 2] as the primary drivers of consumption.
 * **Error Analysis:** Conducted a Bias Analysis to evaluate the Mean Error (MW) across the 24-hour horizon, comparing tree-based ensembles against statistical SARIMA.
 
+## 📈 Operational Impact & Reliability
+To evaluate the real-world utility of our models, we compared the best-performing machine learning algorithm against a **Persistence Baseline (Lag-24)**. This represents the "Naive" strategy of assuming tomorrow’s load will be identical to today's.
+
+* **Precision Improvement:** Our optimized pipeline reduced hourly forecasting error by **[Insert MW] MW** on average compared to the baseline.
+* **System Reliability:** By utilizing **[Insert Model Name]**, we reduced daily energy uncertainty by **[Insert MWh] MWh/day**.
+* **Grid Stability:** The reduction in Mean Absolute Error (MAE) allows for more efficient scheduling of base-load power plants and minimizes the reliance on expensive, high-carbon "peaker" plants during unexpected demand spikes.
+
 ## 🛠 Feature Engineering (The "Forecast-Legal" Approach)
 To ensure the model is viable for real-world day-ahead planning, we implemented:
 - **Cyclic Encoding:** Hour and Month transformed into **Sine/Cosine components** to map temporal continuity (recognizing that Hour 23 and Hour 00 are adjacent).
